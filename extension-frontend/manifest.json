@@ -1,0 +1,29 @@
+{
+    "manifest_version": 3,
+    "name": "WebPageBrief",
+    "version": "1.0",
+    "description":"Summarize or Get Major points of any Webpage",
+    "background": {
+        "service_worker": "background.js"
+      },
+    
+    "permissions": [
+    "tabs", 
+    "activeTab",
+    "webRequest"
+    ],
+    
+    "host_permissions": [
+        "https://*/*",
+        "http://*/*"
+    ],
+    
+    "icons": {
+        "128": "img/icon.png"
+    },
+    "action": {
+        "default_popup": "index.html"
+    
+    }
+    
+}
